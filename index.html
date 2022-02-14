@@ -379,6 +379,16 @@
       </div>
     </section><!-- End Services Section -->
 
+    <!-- Quiz -->
+    <section id="quiz" class="quiz">
+      <div class="container">
+        <div class="quiz_box">
+          <div id="quiz_question"></div>
+          <div id="quiz_answers"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
@@ -942,6 +952,16 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/quiz.js"></script>
+  <script>
+    next_quiz_question(
+      document.getElementById("quiz_question"),
+      document.getElementById("quiz_answers"), 
+      [ {"question": "Select the correct answer", "correct_answer": 0, "answers": ["this is the correct answer", "wrong answer"]},
+        {"question": "Select an answer", "correct_answer": 1, "answers": ["no", "yes"]}
+      ], 0, undefined, undefined)
+  </script>
 
 </body>
 
