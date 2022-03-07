@@ -1,5 +1,8 @@
-function next_quiz_question(question_div, answers_div, quiz_data, score, correctSelection, selection) {
+function next_quiz_question(question_div, answers_div, quiz_data, score, correctSelection, selection, b64=undefined) {
     if (correctSelection == selection && correctSelection != undefined) score++;
+    if (b64 != undefined) {
+        quiz_data = JSON.parse(atob(b64));
+    }
     
     question_div.innerText = quiz_data[0].question;
 
