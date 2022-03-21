@@ -95,9 +95,12 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 .a_box {
-  width: 27%;
   padding: 2%;
   text-align: center;
+}
+.team_members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
 }
 /*--------------------------------------------------------------
 # Get Startet Button
